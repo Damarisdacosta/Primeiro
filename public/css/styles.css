@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+  }
+  .banner {
+    background-image: url('/banner.jpg'); /* Add your image URL here */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff5100;
+    text-align: center;
+  }
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,255,0.5)); /* Adjust gradient colors as needed */
+    z-index: 1;
+  }
+  .banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    z-index: 2;
+  }
+  .banner .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 2;
+  }
+  .banner .btn {
+    padding: 10px 20px;
+    background-color: #ff3300; /* Change button background color */
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+  }
+  .banner .btn:hover {
+    background-color: #0056b3; /* Change button background color on hover */
+  }
